@@ -122,6 +122,10 @@ bool operator==(const ServiceAccount& a, const ServiceAccount& b) {
 bool operator>(const ServiceAccount& a, const ServiceAccount& b) {
     return a.getBalance() > b.getBalance();
 }
+//same as the greater than operator just opposite. We are now looking for the less than one with this operator
+bool operator<(const ServiceAccount& a, const ServiceAccount& b) {
+    return a.getBalance() < b.getBalance();
+}
 
 
 

@@ -1,8 +1,8 @@
-//
+//Dominik Moore
+//Data Structure class
+//22 September 2025
 // Created by Christopher Vaughn
-// Date: 9/15/25
-//Project: 272 Forking & Overloading Exercise
-//
+//Project: 272 Fork
 #include <iostream>
 #include "ServiceAccount.h"
 
@@ -38,6 +38,15 @@ int main() {
         std::cout << "Account a has more money" << std::endl;
     else
         std::cout << "Account b has more money" << std::endl;
-    
-    return 0;  // Indicate successful program execution
+
+    //less than checker
+    ServiceAccount account1("1234", "mypassword", 1);
+    ServiceAccount account2("5678", "mypassword", 2);
+
+    if (account1 < account2)
+        std::cout << "Account 1 has less" << std::endl;
+    else
+        std::cout << "Account 2 has a less" << std::endl;
+
+    return 0;
 }

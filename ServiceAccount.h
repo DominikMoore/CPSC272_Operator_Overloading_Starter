@@ -84,7 +84,7 @@ public:
  * @return true if both accounts have the same balance, false otherwise
  * @note Comparison is based solely on account balance
  */
-bool operator==(const ServiceAccount&, const ServiceAccount&);
+bool operator == (const ServiceAccount&, const ServiceAccount&);
 
 /**
  * @brief Greater-than operator overload for ServiceAccount objects
@@ -94,5 +94,9 @@ bool operator==(const ServiceAccount&, const ServiceAccount&);
  * @note Comparison is based solely on account balance
  */
 bool operator>(const ServiceAccount&, const ServiceAccount&);
+//less than operator overload
+//is the same as the greater than operator just the opposite in terms of looking for numbes
+bool operator<(const ServiceAccount&, const ServiceAccount&);
+
 
 #endif //CPSC272_OPERATOR_OVERLOADING_STARTER_SERVICEACCOUNT_H
